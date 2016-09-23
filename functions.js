@@ -85,7 +85,34 @@ reverseString = function() {
   return this.split('').reverse().join('');
 };
 
+
 // short7
-function findLongestWord(arr) {
-  
+// write a function findLongestWords
+// takes an array of words
+// returns the lengths of the longest words
+
+function findLongestWords(arr) {
+  var longestWordsLength = 0
+
+  // check which is the longest words from the array
+  for (var i = 0; i < arr.length; i++) {
+    console.log(arr[i]);
+
+    // check what's the arr[1] length
+    console.log(arr[i].length);
+
+    // check if longestWordsLength < arr[i].length
+    // if yes, update longestWordsLength
+    if ( longestWordsLength < arr[i].length) {
+      longestWordsLength = arr[i].length;
+    }
+  }
+  return longestWordsLength;
+
+}
+
+// short8
+
+function filterLongWords(arr) {
+  var 
 }
