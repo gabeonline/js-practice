@@ -21,8 +21,9 @@ transmogrifier(42, 13, 7);
 // long3
 function wordReverse(string) {
   var result = string.split.reverse.join(' ')
+  return result;
 };
-return result;
+
 
 
 // short1
@@ -67,9 +68,11 @@ function sumArray(array) {
 
 function multiplyArray(array) {
   var product = array[0];
-  for (var)
-
-}
+  for (var i = 0; i < array.length; i++) {
+    product *= array[0];
+  }
+  return product;
+};
 
 // short5
 var numberOfArguments = function() {
@@ -110,14 +113,13 @@ function findLongestWords(arr) {
 
 // short8
 
-function filterLongWords(array, int) {
+var filterLongWords = function(array, x) {
   var length = array.length;
   var longestWords = [];
   for (i = 0; i < length; i++) {
-    if (array[i].length > int) {
+    if (array[i].length > x) {
       longestWords[longestWords.length] = array[i];
     }
   }
   return longestWords;
-}
-}
+};
