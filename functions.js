@@ -10,7 +10,7 @@ function lengths(stringsArray) {
 // long2
 function transmogrifier(x, y, z) {
   var transmogrified = Math.pow((x * y), z);
-  console.log transmogrified;
+  console.log(transmogrified);
   return transmogrified;
 }
 
@@ -25,11 +25,8 @@ function wordReverse(string) {
 return result;
 
 
-
-
-
 // short1
-function maxOfTwoNumbers (a, b) {
+function maxOfTwoNumbers(a, b) {
   if (a > b) {
     return a
   } else if (a < b) {
@@ -38,7 +35,7 @@ function maxOfTwoNumbers (a, b) {
 }
 
 // short2
-function maxOfThree (x, y, z) {
+function maxOfThree(x, y, z) {
   if (x > y && y > z) {
     return x
   }
@@ -51,7 +48,7 @@ function maxOfThree (x, y, z) {
 }
 
 // short3
-function isCharacterAVowel (a) {
+function isCharacterAVowel(a) {
   var vowels = ['a', 'e', 'i', 'o', 'u'];
   if (vowels.indexOf(a) != -1) {
     return true;
@@ -103,7 +100,7 @@ function findLongestWords(arr) {
 
     // check if longestWordsLength < arr[i].length
     // if yes, update longestWordsLength
-    if ( longestWordsLength < arr[i].length) {
+    if (longestWordsLength < arr[i].length) {
       longestWordsLength = arr[i].length;
     }
   }
@@ -113,6 +110,14 @@ function findLongestWords(arr) {
 
 // short8
 
-function filterLongWords(arr) {
-  var 
+function filterLongWords(array, int) {
+  var length = array.length;
+  var longestWords = [];
+  for (i = 0; i < length; i++) {
+    if (array[i].length > int) {
+      longestWords[longestWords.length] = array[i];
+    }
+  }
+  return longestWords;
+}
 }
